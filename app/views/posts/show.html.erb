@@ -1,2 +1,6 @@
+<% title @post.title %>
+<%# application helper being used here %>
 <h1><%= @post.title %></h1>
-<p><%= @post.description %></p>
+<p><%= last_updated @post %></p>
+  <%# helper is used her las_updated %>
+<p><%= @post.description %></p> 

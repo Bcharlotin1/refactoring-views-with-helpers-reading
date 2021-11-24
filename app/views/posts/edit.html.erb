@@ -1,4 +1,6 @@
 <%= form_for(@post) do |f| %>
+  <label><%= last_updated @post %></label><br>
+  <%# helper is used her las_updated %>
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
@@ -6,4 +8,4 @@
   <%= f.text_area :description %><br>
 
   <%= f.submit %>
-<% end %>
+<% end %> 

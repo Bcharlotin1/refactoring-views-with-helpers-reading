@@ -1,3 +1,7 @@
+
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
-<% end %>
+  <div>
+    <%= post.title %> - <%= last_updated post %>
+      <%# helper is used her las_updated %>
+  </div>
+<% end %> 
